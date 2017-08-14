@@ -31,22 +31,26 @@ def check(A):
             print("!", A[i],">", A[i - 1], "at: ", i)
             return "FAILED!"
     return "PASSED!"
+
+""""""
 a_list = gen_array(5)
 insertion(a_list)
 print(a_list)
 print(check(a_list))
 exit(0)
 
-def insertion_sort(A):
-    for j in range(1, len(A)):
-        key = A[j]
-        i = j
-        while i > 0 and A[i - 1] > key:
-            A[i] = A[i - 1]
-            i = i - 1
-        A[i] = key
 
-
-a_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-insertion(a_list)
-print(a_list)
+#
+# def insertion_sort(A):
+#     for j in range(1, len(A)):
+#         key = A[j]
+#         i = j
+#         while i > 0 and A[i - 1] > key:
+#             A[i] = A[i - 1]
+#             i = i - 1
+#         A[i] = key
+#
+#
+# a_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+# insertion(a_list)
+# print(a_list)
