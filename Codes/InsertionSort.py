@@ -6,7 +6,7 @@
 import random
 
 
-def insertion(A):
+def insertionSort(A):
     for j in range(1, len(A)):
         key = A[j]
         # Insert A[j] into the sorted sequence A[1..j-1]
@@ -34,7 +34,7 @@ def check(A):
 
 """"""
 a_list = gen_array(5)
-insertion(a_list)
+insertionSort(a_list)
 print(a_list)
 print(check(a_list))
 exit(0)
